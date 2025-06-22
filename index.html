@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpeedTypingGame</title>
-    <link rel="shortcut icon" href="img/image.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/image.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    
+    <button class="level-btn" id="level-btn">
+        <i class="fa-solid fa-gear"></i>
+    </button>
+    <div class="settings" id="settings">
+        <form id="level-form">
+            <label for="">Level : </label>
+            <select id="level">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </form>
+    </div>
+    <div class="container">
+        <h2>Speed Typing Game</h2>
+        <h1 id="word" class="word"></h1>
+        <input type="text" name="" id="text" autocomplete="off" placeholder="Type here">
+        <p class="time-container">
+            <span id="time"></span>
+        </p>
+        <p class="score-container">
+            <span id="score"></span>
+        </p>
+        <div id="gameover-container" class="gameover-container">
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/3291f801f9.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
